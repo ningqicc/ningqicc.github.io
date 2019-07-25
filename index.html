@@ -87,41 +87,40 @@ var img = document.createElement('li');
 </script>
 
 <script>
-function send()
-{
+function send(){
+
+
 var txta=document.getElementById('txt').value;
-var obj = document.getElementById('txt') ; 
+var obj = document.getElementById('txt'); 
 obj.outerHTML=obj.outerHTML;
-
-
-
 if(txta.search("晚安") != -1 ){
-
    var Arr = ["爱你，老公","晚安❤","爱你呢大宝贝","大宝贝晚安","爱你爱你❤❤","睡觉叭","么么哒～(^з^)-☆"];  
    var n = Math.floor(Math.random() * Arr.length + 1)-1;  
    var txtq=Arr[n];
 }else{
+
    if(txta.search("爱你") != -1 ){
    ai();
    var Arr = ["爱你大宝贝ヽ(爱´∀‘爱)ノ","我也爱你鸭","超级超级爱你，啵啵啵","爱你(´ε｀ ʃƪ)❤","老公我也爱你","爱你爱你大宝贝"];  
    var n = Math.floor(Math.random() * Arr.length + 1)-1;  
    var txtq=Arr[n];
    }else{
-   if(txta.search("辣鸡") != -1 ){
-   var Arr = ["(你才是辣鸡呢，哼","我是小仙女，才不是辣鸡","你个臭居居，你才是辣鸡","惩罚你亲我一下"];  
-   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
-   var txtq=Arr[n];
-  }else{
-   if(txta.search("亲"，"啵") != -1 ){
-   var Arr = ["(啵啵啵","爱你小辣鸡","么么哒～(^з^)-☆","爱你呢老公✺◟(∗❛ัᴗ❛ั∗)◞✺"];  
-   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
-   var txtq=Arr[n];
-}else{
    if(txta.search("睡") != -1 ){
    var Arr = ["(๑‾ ꇴ ‾๑)睡觉","睡了","(ᴗ͈ˬᴗ͈)晚安","做个好梦❤"];  
    var n = Math.floor(Math.random() * Arr.length + 1)-1;  
    var txtq=Arr[n];
 }else{
+   if(txta.search("辣鸡") != -1 ){
+   var Arr = ["(你才是辣鸡呢，哼","我是小仙女，才不是辣鸡","你个臭居居，你才是辣鸡","惩罚你亲我一下"];  
+   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
+   var txtq=Arr[n];
+  }else{
+  if(txta.search("亲") != -1 ){
+   var Arr = ["(啵啵啵","爱你小辣鸡","么么哒～(^з^)-☆","爱你呢老公✺◟(∗❛ัᴗ❛ั∗)◞✺"];  
+   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
+   var txtq=Arr[n];
+}else{
+
 if(txta.search("机器人") != -1 ){
    var Arr = ["才不是嘞，我是小仙女哦(*'▽'*)♪","(๐•̆ ·̭ •̆๐)我不是，别瞎说，那是你","我和你老婆一样爱你♡(*´∀｀*)人(*´∀｀*)♡"];  
    var n = Math.floor(Math.random() * Arr.length + 1)-1;  
@@ -132,8 +131,12 @@ var n = Math.floor(Math.random() * Arr.length + 1)-1;
 var txtq=Arr[n]+txta;
 }
 }
+  }
 }
 }
+}
+
+
 if (0<txta.length){
 if (18<txta.length){
 var sl = Math.ceil(txta.length/18);
@@ -156,8 +159,8 @@ img.setAttribute('style','list-style:none;');
    setTimeout(function() {
             sends(txtq);
 }, 500);
-    
 }
+
 }
 </script>
 <script>
