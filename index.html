@@ -53,7 +53,7 @@ return;
 <script>
 function myFunction(){
 var img = document.createElement('img');
-        img.setAttribute('src','668440824.jpeg');
+        img.setAttribute('src','keai.jpg');
         img.setAttribute('style','width:100px; height:100px;border-radius:9999px;');
         img.setAttribute('width','100px');
         document.getElementById('myList').appendChild(img);
@@ -69,7 +69,7 @@ var img = document.createElement('img');
 <script>
 function my(){
 var img = document.createElement('li');
-        img.innerHTML='<div style="left:3%;"><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="668440824.jpeg"/><button type="button"style="margin-top:90px;width:420px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">老公早安</button></div>';
+        img.innerHTML='<div style="left:3%;"><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="keai.jpg"/><button type="button"style="margin-top:90px;width:420px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">老公早安</button></div>';
         document.getElementById('myList').appendChild(img);
         window.scrollTo(0,document.body.scrollHeight); 
        
@@ -119,6 +119,16 @@ if(txta.search("晚安") != -1 ){
    var Arr = ["(啵啵啵","爱你小辣鸡","么么哒～(^з^)-☆","爱你呢老公✺◟(∗❛ัᴗ❛ั∗)◞✺"];  
    var n = Math.floor(Math.random() * Arr.length + 1)-1;  
    var txtq=Arr[n];
+   }else{
+   if(txta.search("早安") != -1 ){
+   var Arr = ["(早安大宝贝♡＾▽＾♡","早安_(:з」∠)_","早安，但是我困困( ﾉД`)","早安，爱你呢老公"];  
+   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
+   var txtq=Arr[n];
+  }else{
+  if(txta.search("你不乖") != -1 ){
+   var Arr = ["(我错了大宝贝(´д⊂)","我乖我乖(｡>ㅿ<｡)","我一定会乖乖的(๑ó﹏ò๑)"];  
+   var n = Math.floor(Math.random() * Arr.length + 1)-1;  
+   var txtq=Arr[n];
 }else{
 
 if(txta.search("机器人") != -1 ){
@@ -143,7 +153,7 @@ var sl = Math.ceil(txta.length/18);
 var sln = sl*70;
 var img = document.createElement('li');
 img.setAttribute('style','list-style: none');
-        img.innerHTML='<div style="text-align:right; "><button type="button"style="margin-top:100px;width:750px; height:'+sln+'px;font-size: 40px;border-radius:40px;background-color:rgba(30,144,255,0.7);border:#4FC3F7;"><font color="#FFFFFF">'+txta+'</font></button><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;margin-right:5%;"src="668440823.jpeg"/></div>';
+        img.innerHTML='<div style="text-align:right; "><button type="button"style="margin-top:100px;width:750px; height:'+sln+'px;font-size: 40px;border-radius:40px;background-color:rgba(30,144,255,0.7);border:#4FC3F7;"><font color="#FFFFFF">'+txta+'</font></button><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;margin-right:5%;"src="laji.jpg"/></div>';
         document.getElementById('myList').appendChild(img);
         window.scrollTo(0,document.body.scrollHeight); 
 
@@ -152,7 +162,7 @@ else{
 var sln = txta.length*40+30;
 var img = document.createElement('li');
 img.setAttribute('style','list-style:none;');
-        img.innerHTML='<div style="text-align:right; "><button type="button"style="margin-top:100px;width:'+sln+'px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(30,144,255,0.7);border:#4FC3F7;"><font color="#FFFFFF">'+txta+'</font></button><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;margin-right:5%;"src="668440823.jpeg"/></div>';
+        img.innerHTML='<div style="text-align:right; "><button type="button"style="margin-top:100px;width:'+sln+'px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(30,144,255,0.7);border:#4FC3F7;"><font color="#FFFFFF">'+txta+'</font></button><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;margin-right:5%;"src="laji.jpg"/></div>';
         document.getElementById('myList').appendChild(img);
         window.scrollTo(0,document.body.scrollHeight); 
     }
@@ -186,7 +196,7 @@ var sln = sl*70;
 var img = document.createElement('li');
 img.setAttribute('style','list-style: none;');
 
-        img.innerHTML='<div style=""><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="668440824.jpeg"/><button type="button"style="margin-top:90px;left:5%;width:750px; height:'+sln+'px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">'+txta+'</button></div>';
+        img.innerHTML='<div style=""><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="keai.jpg"/><button type="button"style="margin-top:90px;left:5%;width:750px; height:'+sln+'px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">'+txta+'</button></div>';
         document.getElementById('myList').appendChild(img);
         window.scrollTo(0,document.body.scrollHeight); 
 
@@ -195,7 +205,7 @@ else{
 var sln = txta.length*40+30;
 var img = document.createElement('li');
 img.setAttribute('style','list-style: none');
-        img.innerHTML='<div style=""><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="668440824.jpeg"/><button type="button"style="margin-top:90px;left:5%;width:'+sln+'px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">'+txta+'</button></div>';
+        img.innerHTML='<div style=""><img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="keai.jpg"/><button type="button"style="margin-top:90px;left:5%;width:'+sln+'px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;">'+txta+'</button></div>';
         document.getElementById('myList').appendChild(img);
         window.scrollTo(0,document.body.scrollHeight); 
     }
@@ -205,13 +215,13 @@ img.setAttribute('style','list-style: none');
 <ul id="myList">
 <li style="list-style: none;">
             <div id="dg" style="list-style: none;left:3%; top:0%;">
-						     <img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="668440824.jpeg"/>
+						     <img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="keai.jpg"/>
 						     <img style="margin-top:100px;width:350px; height:350px;"src="wanan.gif"/>
 						     </li>
 <li style="list-style: none;">
 			</div>
             <div id="dg" style="left:3%;top:25%;">
-						     <img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="668440824.jpeg"/>
+						     <img style="margin-top:100px;width:100px; height:100px;border-radius:9999px;"src="keai.jpg"/>
 						     <button onclick="yu()" type="button"style="margin-top:90px;width:170px; height:100px;font-size: 40px;border-radius:40px;background-color:rgba(255,255,255,1);border:#4FC3F7; margin:0 auto;"> <img style="width:60px; height:60px;"src="162158.png"/></button>
 </li>
 </ul>
